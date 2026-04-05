@@ -8,10 +8,7 @@ from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
 from tensorflow.keras.models import Model
 
-from pyngrok import ngrok
 
-public_url = ngrok.connect(8501)
-print("Public URL:", public_url)
 
 # создаём ту же модель
 base_model = MobileNetV2(
